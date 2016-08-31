@@ -1,6 +1,7 @@
 var remote = require('remote')
 var Menu = remote.require('menu')
 var MenuItem = remote.require('menu-item')
+var dialog = remote.require('dialog')
 
 // Build our new menu
 var menu = new Menu()
@@ -25,3 +26,15 @@ document.addEventListener('DOMContentLoaded', function () {
     menu.popup(remote.getCurrentWindow());
   })
 })
+
+function didFireLoadFromHuboard() {
+    dialog.showMessageBox({
+        type: "error",
+        buttons: ["OK"],
+        message: "not implemented yet"
+    })
+}
+
+function didFireLoadExcel() {
+    dialog.showOpenDialog({properties: ['openFile']})
+}
