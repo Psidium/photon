@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Excel Huboard</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/photon.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- Insert this line above script imports  -->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <!-- Javascript -->
+    <script src="js/jquery-3.1.0.min.js" charset="utf-8"></script>
+    <script src="js/excel2huboard.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="window">
+      <!-- .toolbar-header sits at the top of your app -->
+      <header class="toolbar toolbar-header">
+        <h1 class="title">Excel Huboard</h1>
+      </header>
+
+      <!-- Your app's content goes inside .window-content -->
+      <div class="window-content nice-color">
+          <div id="selectors">
+              <h1 class="title">Sheet selector</h1>
+              <select id="sheets" class="form-control">
+              </select>
+          </div>
+          <div id="preview">
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
