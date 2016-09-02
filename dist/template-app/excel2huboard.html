@@ -23,9 +23,19 @@
       <!-- Your app's content goes inside .window-content -->
       <div class="window-content nice-color">
           <div id="selectors">
-              <h1 class="title">Sheet selector</h1>
-              <select id="sheets" class="form-control">
-              </select>
+              <div id="sheets-box" class="selector-box form-group">
+                  <label>Sheet Selector</label>
+                  <select id="sheets" class="form-control">
+                  </select>
+              </div>
+              <div id="header-row-box" class="selector-box form-group">
+                  <label>Header Row</label>
+                  <input id="header-row" type="number" class="form-control" value="0">
+              </div>
+              <div id="data-begin-box" class="selector-box form-group">
+                  <label>Data Row Begin</label>
+                  <input id="data-begin-row" type="number" class="form-control" value="1">
+              </div>
           </div>
           <div id="preview">
           </div>
